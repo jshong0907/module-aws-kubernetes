@@ -6,7 +6,7 @@ output "eks_cluster_name" {
     value = aws_eks_cluster.ms-up-running.name
 }
 
-ouput "eks_cluster_certificate_data" {
+output "eks_cluster_certificate_data" {
     value = aws_eks_cluster.ms-up-running.certificate_authority.0.data
 }
 
