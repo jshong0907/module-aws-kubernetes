@@ -37,8 +37,8 @@ resource "aws_iam_role_policy_attachment" "ms-cluster-AmazonEKSClusterPolicy" {
 }
 
 resource "aws_security_group" "ms-cluster" {
-  name        = local.cluster_name
-  vpc_id      = var.vpc_id
+  name   = local.cluster_name
+  vpc_id = var.vpc_id
 
   egress {
     from_port   = 0
